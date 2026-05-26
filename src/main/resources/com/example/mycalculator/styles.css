@@ -1,0 +1,38 @@
+/* 設定整個計算機的背景色為乾淨的微暖白 */
+.root {
+    -fx-background-color: #FAFAFA;
+}
+
+/* 顯示螢幕：透明背景、靠右對齊、乾淨的字體 */
+.text-field {
+    -fx-background-color: transparent;
+    -fx-font-size: 48px;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-alignment: center-right;
+    -fx-text-fill: #2C3E50;
+    -fx-padding: 20px;
+}
+
+/* 按鈕的預設狀態：純白底、圓角、微微的晨露般陰影 */
+.button {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 12px;
+    -fx-font-size: 24px;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-text-fill: #34495E;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.08), 10, 0, 0, 4);
+    -fx-border-color: transparent;
+}
+
+/* 當滑鼠移過去 (Hover) 的互動回饋：稍微變灰 */
+.button:hover {
+    -fx-background-color: #F0F3F4;
+}
+
+/* 當按鈕被按下去 (Pressed) 的觸覺回饋：陰影縮小，產生按壓感 */
+.button:pressed {
+    -fx-background-color: #E5E8E8;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.04), 2, 0, 0, 1);
+    -fx-translate-y: 2px;
+}
